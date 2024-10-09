@@ -4,18 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/public/favicon.png">
     <title>Dominos Clicker</title>
-    /*Favicon*/
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <h1>Dominos Clicker</h1>
+    </header>
+    <div id="mushroomSlice_container">
+        <img id="mushroomSlice_img" src="/public/mushroomSlice.png" alt="tranche d'un champignon de Paris">
+    </div>
 
-    <main>/*H1 et image de la pizza*/</main>
-    <aside>/*zone de multiplicateurs*/</aside>
-    <aside>/*inventaires des multiplicateurs*/</aside>
+    <main>
+        <section>
+            <h2>Nombre de parts de pizza</h2>
+            <p id="sliceOfPizza_count">0</p>
+        </section>
 
-    <footer>/*menu à 4 items*/</footer>
+        <div id="pizza_container" onclick="addPizzaSlice()">
+            <img id="pizza_img" src="/public/pizza.png" alt="photo d'une pizza" onclick="pizzaClick()">
+        </div>
+    </main>
+    <nav>
+        <ul>
+            <li><a href="#pizza">Pizza</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#stats">Stats</a></li>
+            <li><a href="#misc">Misc</a></li>
+        </ul>
+    </nav>
+
+    <footer>
+        <p>&copy; 2024 Dominos Clicker. All Rights Reserved. Fait avec amour par nous :-</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

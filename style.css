@@ -1,0 +1,61 @@
+
+*{
+box-sizing: border-box;
+}
+
+
+/*pour fixer la pizza*/
+#pizza_container {
+  width: 90vw;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  border-radius: 50%;
+}
+
+/*pour fixer la taille de l'image au container*/
+#pizza_img {
+  width: 100%;
+}
+
+/*Animations sur la pizza au passage de la souris et au click*/
+#pizza_img:hover {
+  transform: scale(1.1);
+}
+#pizza_img:active {
+  transform: rotate(2deg);
+}
+
+/*pour déterminer la position du champignon au dessus de la pizza*/
+#mushroomSlice_container {
+  width: 10vw;
+  position: absolute;
+  z-index: 1000;
+}
+
+
+
+/*Animation de chute du champignon*/
+
+#mushroomSlice_container{
+  transform : translate(200px,200px) ;
+}
+
+#mushroomSlice_img {
+  width: 100%;
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count:infinite;
+}
+
+@keyframes slidein {
+from {
+  margin-left: 100%;
+  width: 300%;
+}
+
+to {
+  margin-left: 0%;
+  width: 100%;
+}
+}
