@@ -187,6 +187,7 @@ button:hover {
 }
 
 /* NAV */
+/*Style de la nav*/
 #navMenu {
   background-color: #cb2026;
   height: 40px;
@@ -213,4 +214,37 @@ button:hover {
   font-family: fantasy;
   text-shadow: 2px 2px 0px black, -2px 2px 0px black, -2px -2px 0px black,
     2px -2px 0px black;
+}
+/*Style Modals de la nav*/
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease;
+}
+
+.modalHidden {
+  display: none;
+  pointer-events: none;
+}
+.modalContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  width: 300px;
+}
+
+.closeBtn {
+  position: relative;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  z-index: auto;
 }

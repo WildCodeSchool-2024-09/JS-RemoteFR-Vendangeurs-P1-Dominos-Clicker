@@ -107,6 +107,8 @@ function addShroom(){shrooms = shrooms +1;
          document.getElementById("anchoyCount").innerHTML = anchoy;}
      
 
+
+     ////////////////////////
       function pizzaClick(){
 
         compteur= compteur +1;
@@ -117,6 +119,24 @@ function addShroom(){shrooms = shrooms +1;
         image.src=images[compteur];
 
          }
+
+////////////////////////
+// FENETRE MODAL ONCLICK
+
+
+const openModalPizzaBtn = document.querySelector("#openModalPizzaBtn");
+const modalPizza = document.querySelector("#modalPizza");
+const closeModalPizzaBtn = document.querySelector("#closeModalPizzaBtn");
+
+
+openModalPizzaBtn.addEventListener("click" , () => {
+  modalPizza.className = "modal";
+})
+
+closeModalPizzaBtn.addEventListener("click" , () => {
+  console.log("toto");
+  modalPizza.className = "modalHidden";
+})
 
 
    
