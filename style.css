@@ -187,7 +187,16 @@ button:hover {
 }
 
 /* NAV */
-ul {
+#navMenu {
+  background-color: #cb2026;
+  height: 40px;
+  border-radius: 18px;
+  filter: drop-shadow(2px 2px 1px black);
+  border-style: groove;
+  border-radius: 10px 25px;
+  border-color: #efae33;
+}
+#navMenu ul {
   height: 100%;
   padding: 0;
   margin: 0;
@@ -198,16 +207,7 @@ ul {
   list-style-type: none;
   font-size: 20px;
 }
-#navMenu {
-  background-color: #cb2026;
-  height: 40px;
-  border-radius: 18px;
-  filter: drop-shadow(2px 2px 1px black);
-  border-style: groove;
-  border-radius: 10px 25px;
-  border-color: #efae33;
-}
-a {
+#navMenu ul a {
   text-decoration: none;
   color: #ffcf52;
   font-family: fantasy;
