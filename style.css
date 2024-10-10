@@ -1,8 +1,6 @@
-
-*{
-box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-
 
 /*pour fixer la pizza*/
 #pizza_container {
@@ -33,29 +31,56 @@ box-sizing: border-box;
   z-index: 1000;
 }
 
-
-
 /*Animation de chute du champignon*/
 
-#mushroomSlice_container{
-  transform : translate(200px,200px) ;
+#mushroomSlice_container {
+  transform: translate(200px, 200px);
 }
 
 #mushroomSlice_img {
   width: 100%;
   animation-duration: 3s;
   animation-name: slidein;
-  animation-iteration-count:infinite;
+  animation-iteration-count: infinite;
 }
 
 @keyframes slidein {
-from {
-  margin-left: 100%;
-  width: 300%;
-}
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
 
-to {
-  margin-left: 0%;
-  width: 100%;
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
+/* NAV */
+ul {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  font-size: 20px;
+}
+nav {
+  background-color: #cb2026;
+  height: 40px;
+  border-radius: 18px;
+  filter: drop-shadow(2px 2px 1px black);
+  border-style: groove;
+  border-radius: 10px 25px;
+  border-color: #efae33;
+}
+a {
+  text-decoration: none;
+  color: #ffcf52;
+  font-family: fantasy;
+  text-shadow: 2px 2px 0px black, -2px 2px 0px black, -2px -2px 0px black,
+    2px -2px 0px black;
+  font-weight: bold;
 }
