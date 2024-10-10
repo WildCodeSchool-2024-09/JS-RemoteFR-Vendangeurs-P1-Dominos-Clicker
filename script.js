@@ -109,7 +109,7 @@ function addShroom(){shrooms = shrooms +1;
 
       function pizzaClick(){
 
-        compteur++;
+        compteur= compteur +1;
         if(compteur >= images.length){
           compteur = 0;
         } 
