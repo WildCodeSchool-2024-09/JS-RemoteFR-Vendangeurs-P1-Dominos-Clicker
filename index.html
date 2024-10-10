@@ -10,45 +10,43 @@
 
 <body>
     <header>
-        <h1>Dominos Clicker</h1>
+        <div id="scrollingText_container">
+            <div id="scrollingText">Vends des parts de pizza | Achète des ingrédients | Vends plus de parts de pizza</div>
+        </div>
+        <div id="logo">
+            <img src="/public/logo2.png" alt="logo du jeu Dominos Clicker">
+            <span id="sliceOfPizza_count">0</span>
+        </div>
     </header>
-    <div id="mushroomSlice_container">
+
+    <!--<div id="mushroomSlice_container">
         <img id="mushroomSlice_img" src="/public/mushroom.png" alt="tranche d'un champignon de Paris">
-    </div>
+    </div>-->
 
     <main>
         <section>
-            <h2>Nombre de parts de pizza</h2>
-            <p id="sliceOfPizza_count">0</p>
-
-
-             <button onclick="addShroom()">Ajouter des champignons</button>
-            <p>Champignons : <span id="shroomCount" >0</span></p>
-              
-            
-            <button onclick="addTomatos()">Ajouter des tomates</button>
-             <p>Tomates: <span id="tomatosCount">0</span></p>
-
-            <button onclick="addCheese()">Ajouter du fromage</button>
-            <p>Fromages: <span id="cheeseCount">0</span></p>
-
-            <button onclick="addAnchoy()">Ajouter des anchois</button>
-            <p>Anchois: <span id="anchoyCount">0</span></p>
-
+            <nav id="navMultiplicateurs">
+                <li><button onclick="addShroom()"><img src="/public/mushroom.png" alt="dessin d'une tranche de champignon"><span id="shroomCount" >0</span></button></li>            
+                <li><button onclick="addTomatos()"><img src="/public/tomatoe.png" alt="dessin d'une tranche de tomate"><span id="tomatosCount">0</span></button></li>
+                <li><button onclick="addCheese()"><img src="/public/bellpepper.png" alt="dessin d'une tranche de poivron"><span id="cheeseCount">0</span></button></li>
+                <li><button onclick="addAnchoy()"><img src="/public/olive.png" alt="dessin d'une olive noire"><span id="anchoyCount">0</span></button></li>         
+            </nav>
         </section>
-
+        
         <div id="pizza_container" onclick="addPizzaSlice()">
-            <img id="pizza_img" src="/public/fullDrawingPizza.png" alt="photo d'une pizza" onclick="pizzaClick()">
+            <img id="pizza_img" src="/public/pizza.png" alt="photo d'une pizza" onclick="pizzaClick()">
         </div>
+        
+        
+        <nav id="navMenu" class="menuHidden">
+            <ul>
+                <li><a href="#pizza">Pizza</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#stats">Stats</a></li>
+                <li><a href="#misc">Misc</a></li>
+            </ul>
+        </nav>
     </main>
-    <nav>
-        <ul>
-            <li><a href="#pizza">Pizza</a></li>
-            <li><a href="#shop">Shop</a></li>
-            <li><a href="#stats">Stats</a></li>
-            <li><a href="#misc">Misc</a></li>
-        </ul>
-    </nav>
 
     <footer>
         <p>&copy; 2024 Dominos Clicker. All Rights Reserved. Fait avec amour par nous :-</p>
