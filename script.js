@@ -113,7 +113,7 @@ function addShroom(){shrooms = shrooms +1;
         if(compteur >= images.length){
           compteur = 0;
         } 
-        var image = document.getElementById ("pizza_img");
+        let image = document.getElementById ("pizza_img");
         image.src=images[compteur];
 
          }
