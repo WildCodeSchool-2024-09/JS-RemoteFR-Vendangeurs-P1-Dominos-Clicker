@@ -12,7 +12,6 @@ let olive = 0
 
 let compteur = 0
 
-
 let images = [
 "./public/pizza.png", //Image par default
 "./public/pizza1.png",
@@ -42,7 +41,8 @@ let images = [
 
 function pizzaClick(){
   compteur= compteur +1;
-  document.getElementById("sliceOfPizza_count").innerHTML = parseInt(compteur);
+  pizzas = pizzas+1;
+  document.getElementById("sliceOfPizza_count").innerHTML = parseInt(pizzas);
     if(compteur >= images.length){
       compteur = 0;
     } 
