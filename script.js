@@ -6,11 +6,12 @@ let shrooms = 0
 
 let tomatos = 0
 
-let cheese = 0
+let bellPepper = 0
 
-let anchoy = 0
+let olive = 0
 
 let compteur = 0
+
 
 let images = [
 "./public/pizza.png", //Image par default
@@ -65,6 +66,7 @@ function addShroom(){
   document.getElementById("shroomCount").innerHTML = shrooms;
 }
 
+
 function tomatosAddPizzaSlice(){
   pizzas = pizzas + (tomatos * pizzasMultiple);
   document.getElementById("sliceOfPizza_count").innerHTML = parseInt(pizzas);
@@ -96,6 +98,7 @@ function addCheese(){
     
 ////////////////////////////////////////////////////////////////////////
 
+
 function anchoyAddPizzaSlice(){
   pizzas = pizzas + (anchoy * pizzasMultiple);
   document.getElementById("sliceOfPizza_count").innerHTML = parseInt(pizzas);
@@ -110,9 +113,6 @@ function addAnchoy(){
       }, 1000)
   document.getElementById("anchoyCount").innerHTML = anchoy;
 }
-
-
-
 
 ///////////////////////FENETRE MODAL ONCLICK///////////////////////
 
