@@ -6,11 +6,12 @@ let shrooms = 0
 
 let tomatos = 0
 
-let cheese = 0
+let bellPepper = 0
 
-let anchoy = 0
+let olive = 0
 
 let compteur = 0
+
 
 let images = [
   "./public/pizza.png", //Image par default
@@ -38,10 +39,11 @@ function addShroom(){shrooms = shrooms +1;
  
     setInterval(function(){
       ShroomAddPizzaSlice()
-  
+     
   
      }, 1000)
      document.getElementById("shroomCount").innerHTML = shrooms;
+     
     }
     
   
@@ -50,7 +52,7 @@ function addShroom(){shrooms = shrooms +1;
 
 
    function tomatosAddPizzaSlice(){pizzas = pizzas + (tomatos * pizzasMultiple);
-    document.getElementById("sliceOfPizza_count").innerHTML = parseInt(pizzas);
+    document.getElementById("sliceOfPizza_count").innerHTML = parseInt(pizzas );
   
   
   }
@@ -71,20 +73,20 @@ function addShroom(){shrooms = shrooms +1;
      ////////////////////////
      
 
-     function cheeseAddPizzaSlice(){pizzas = pizzas + (cheese * pizzasMultiple);
+     function bellPepperAddPizzaSlice(){pizzas = pizzas + (bellPepper * pizzasMultiple);
       document.getElementById("sliceOfPizza_count").innerHTML = parseInt(pizzas);
     
     
     }
   
-    function addCheese(){cheese = cheese +1;
+    function addBellPepper(){bellPepper = bellPepper +1;
       
         setInterval(function(){
-          cheeseAddPizzaSlice()
+          bellPepperAddPizzaSlice()
       
       
          }, 1000)
-         document.getElementById("cheeseCount").innerHTML = cheese;
+         document.getElementById("bellPepperCount").innerHTML = bellPepper;
         }
        
       
@@ -92,19 +94,19 @@ function addShroom(){shrooms = shrooms +1;
 
        ///////
 
-       function anchoyAddPizzaSlice(){pizzas = pizzas + (anchoy * pizzasMultiple);
+       function oliveAddPizzaSlice(){pizzas = pizzas + (olive * pizzasMultiple);
         document.getElementById("sliceOfPizza_count").innerHTML = parseInt(pizzas);
       
       
       }
     
-      function addAnchoy(){anchoy = anchoy +1;
+      function addOlive(){olive = olive +1;
         setInterval(function(){
-          anchoyAddPizzaSlice()
+          oliveAddPizzaSlice()
       
       
          }, 1000)
-         document.getElementById("anchoyCount").innerHTML = anchoy;}
+         document.getElementById("oliveCount").innerHTML = olive;}
      
 
       function pizzaClick(){
