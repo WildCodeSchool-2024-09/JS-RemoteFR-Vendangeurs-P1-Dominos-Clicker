@@ -23,115 +23,109 @@ let images = [
 "./public/pizza7.png"
 ];
 
+////////////////////////////////////////////////////////////////////////
+// Maxence 
+// function addPizzaSlice(){
+//   pizzas = pizzas+1;
+//   document.getElementById("sliceOfPizza_count").innerHTML = parseInt(pizzas);
+// }
+// Vincent 
+// function pizzaClick(){
+//   compteur= compteur +1;
+//     if(compteur >= images.length){
+//       compteur = 0;
+//     } 
+//   let image = document.getElementById ("pizza_img");
+//   image.src=images[compteur];
+// }
 
-function addPizzaSlice(){
-pizzas = pizzas+1;
-document.getElementById("sliceOfPizza_count").innerHTML = parseInt(pizzas);
+function pizzaClick(){
+  compteur= compteur +1;
+  document.getElementById("sliceOfPizza_count").innerHTML = parseInt(compteur);
+    if(compteur >= images.length){
+      compteur = 0;
+    } 
+  let image = document.getElementById ("pizza_img");
+  image.src=images[compteur];
 }
 
+
+////////////////////////////////////////////////////////////////////////
+
 function ShroomAddPizzaSlice(){
-pizzas = pizzas + (shrooms * pizzasMultiple);
-document.getElementById("sliceOfPizza_count").innerHTML = parseInt(pizzas);
+  pizzas = pizzas + (shrooms * pizzasMultiple);
+  document.getElementById("sliceOfPizza_count").innerHTML = parseInt(pizzas);
 }
 
 function addShroom(){
-shrooms = shrooms +1;
-
-setInterval(function(){
-    ShroomAddPizzaSlice()
+  shrooms = shrooms +1;
+    setInterval(function(){
+      ShroomAddPizzaSlice()
 }, 1000)
-
-document.getElementById("shroomCount").innerHTML = shrooms;
+  document.getElementById("shroomCount").innerHTML = shrooms;
 }
 
-function tomatosAddPizzaSlice(){pizzas = pizzas + (tomatos * pizzasMultiple);
+function tomatosAddPizzaSlice(){
+  pizzas = pizzas + (tomatos * pizzasMultiple);
   document.getElementById("sliceOfPizza_count").innerHTML = parseInt(pizzas);
-
-
 }
 
-function addTomatos(){tomatos = tomatos +1;
-
-
+function addTomatos(){
+  tomatos = tomatos +1;
     setInterval(function(){
       tomatosAddPizzaSlice()
-  
-  
-      }, 1000)
-      document.getElementById("tomatosCount").innerHTML = tomatos;
-    }
+    }, 1000)
+  document.getElementById("tomatosCount").innerHTML = tomatos;
+}
     
-  
-  
-    ////////////////////////
+////////////////////////////////////////////////////////////////////////
     
+function cheeseAddPizzaSlice(){
+  pizzas = pizzas + (cheese * pizzasMultiple);
+  document.getElementById("sliceOfPizza_count").innerHTML = parseInt(pizzas);
+}
 
-    function cheeseAddPizzaSlice(){pizzas = pizzas + (cheese * pizzasMultiple);
-    document.getElementById("sliceOfPizza_count").innerHTML = parseInt(pizzas);
-  
-  
-  }
-
-  function addCheese(){cheese = cheese +1;
-    
-      setInterval(function(){
-        cheeseAddPizzaSlice()
-    
-    
-        }, 1000)
-        document.getElementById("cheeseCount").innerHTML = cheese;
-      }
+function addCheese(){
+  cheese = cheese +1;
+    setInterval(function(){
+      cheeseAddPizzaSlice()
+    }, 1000)
+  document.getElementById("cheeseCount").innerHTML = cheese;
+}
       
     
+////////////////////////////////////////////////////////////////////////
+
+function anchoyAddPizzaSlice(){
+  pizzas = pizzas + (anchoy * pizzasMultiple);
+  document.getElementById("sliceOfPizza_count").innerHTML = parseInt(pizzas);
+}
+
+function addAnchoy(){
+  anchoy = anchoy +1;
+    setInterval(function(){
+  anchoyAddPizzaSlice()
 
 
-      ///////
-
-      function anchoyAddPizzaSlice(){pizzas = pizzas + (anchoy * pizzasMultiple);
-      document.getElementById("sliceOfPizza_count").innerHTML = parseInt(pizzas);
-    
-    
-    }
-  
-    function addAnchoy(){anchoy = anchoy +1;
-      setInterval(function(){
-        anchoyAddPizzaSlice()
-    
-    
-        }, 1000)
-        document.getElementById("anchoyCount").innerHTML = anchoy;}
-    
+      }, 1000)
+  document.getElementById("anchoyCount").innerHTML = anchoy;
+}
 
 
-    ////////////////////////
-    function pizzaClick(){
 
-      compteur= compteur +1;
-      if(compteur >= images.length){
-        compteur = 0;
-      } 
-      let image = document.getElementById ("pizza_img");
-      image.src=images[compteur];
 
-        }
-
-////////////////////////
-// FENETRE MODAL ONCLICK
-
+///////////////////////FENETRE MODAL ONCLICK///////////////////////
 
 const openModalPizzaBtn = document.querySelector("#openModalPizzaBtn");
 const modalPizza = document.querySelector("#modalPizza");
 const closeModalPizzaBtn = document.querySelector("#closeModalPizzaBtn");
+const pizza_img = document.querySelector("#pizza_img");
 
 
 openModalPizzaBtn.addEventListener("click" , () => {
-modalPizza.className = "modal";
+  modalPizza.className = "modal";
 })
 
 closeModalPizzaBtn.addEventListener("click" , () => {
-console.log("toto");
-modalPizza.className = "modalHidden";
+  modalPizza.className = "modalHidden";
 })
-
-
-  
