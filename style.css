@@ -82,8 +82,11 @@ header{
 
 /*pour fixer la taille de l'image au container*/
 #pizza_img {
-  width: 100%;
+  width: 60%;
   filter: drop-shadow(5px 5px 1px black);
+
+  margin-top: 4em;
+  margin-bottom: 1em;
 }
 
 /*Animations sur la pizza au passage de la souris et au click*/
