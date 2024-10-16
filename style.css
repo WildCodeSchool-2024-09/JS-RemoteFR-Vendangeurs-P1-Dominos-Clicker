@@ -3,6 +3,7 @@
 }
 
 body {
+
 	background-image: url(./public/background.png);
 	background-size: cover;
 	overflow-x: hidden;
@@ -11,6 +12,7 @@ body {
 	text-align: center;
 	justify-content: space-between;
 	height: 100vh;
+
 }
 
 
@@ -20,6 +22,8 @@ header{
   justify-content: space-between;
   align-items: center;
   position: relative;
+
+
 
 }
 
@@ -288,4 +292,5 @@ button:hover {
   font-family: fantasy;
   color: #ffcf52;
 }
+
 
