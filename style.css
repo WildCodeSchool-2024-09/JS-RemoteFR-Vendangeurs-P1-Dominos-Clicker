@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: url(/public/background.png);
+  background-image: url(public/background.png);
   background-size: cover;
   overflow-x: hidden; 
   display: flex;
@@ -19,7 +19,7 @@ header{
   justify-content: space-between;
   align-items: center;
   position: relative;
-  height: 28vh;
+  height: 20vh;
 }
 
 /*TEXTE DEFILANT*/
@@ -284,4 +284,5 @@ button:hover {
 footer {
   display: none;
 }
+
 

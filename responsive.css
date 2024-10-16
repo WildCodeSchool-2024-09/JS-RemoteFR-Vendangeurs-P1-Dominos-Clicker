@@ -1,0 +1,37 @@
+  @media screen and (min-width: 768px){ 
+        
+    #plateauPizza_img{
+    width: 480px;
+    margin-bottom: 100.;
+    margin-bottom: 100px;
+        
+    }
+     #pizza_img{
+        position: absolute;
+        width: 490px;
+        margin-top: 3em;
+        filter: drop-shadow(5px 5px 1px black);
+        left: -2%;
+       
+     }
+   
+     #sliceOfPizza_count{
+        position: relative;
+        margin-top: 750px;
+        width: 28rem;
+        height: 8rem;
+        font-size: 6rem;
+
+     }
+     body{
+        align-items: center;
+        display: flex;
+     }
+
+     
+   
+     
+
+
+    
+  }
