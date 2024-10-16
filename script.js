@@ -1,6 +1,12 @@
 let pizzas = 0
 
-let pizzasMultiple= 0.01
+let pizzasShroomMultiple= 0.01
+
+let pizzasTomatoeMultiple= 0.5
+
+let pizzasBellPepperMultiple = 1
+
+let pizzasOliveMultiple = 2
 
 let shrooms = 0
 
@@ -11,6 +17,14 @@ let bellPepper = 0
 let olive = 0
 
 let compteur = 0
+
+let costOfShroom = 10
+
+let costOfTomatoe = 20
+
+let costOfBellPepper = 50
+
+let costOfOlive = 100
 
 let images = [
 "./public/pizza.png", //Image par default
@@ -54,78 +68,112 @@ function pizzaClick(){
 ////////////////////////////////////////////////////////////////////////
 
 function ShroomAddPizzaSlice(){
-  pizzas = pizzas + (shrooms * pizzasMultiple);
+  pizzas = pizzas + (shrooms * pizzasShroomMultiple);
   document.getElementById("sliceOfPizza_count").innerHTML = parseInt(pizzas);
 }
 
-function addShroom(){
+function addShroom() {if (pizzas >= costOfShroom){
   shrooms = shrooms +1;
     setInterval(function(){
       ShroomAddPizzaSlice()
 }, 1000)
   document.getElementById("shroomCount").innerHTML = shrooms;
-}
+  pizzas -= costOfShroom;
+}}
 
+//////////////
 
 function tomatosAddPizzaSlice(){
-  pizzas = pizzas + (tomatos * pizzasMultiple);
+  pizzas = pizzas + (tomatos * pizzasTomatoeMultiple);
   document.getElementById("sliceOfPizza_count").innerHTML = parseInt(pizzas);
 }
 
-function addTomatos(){
+function addTomatos(){if( pizzas >= costOfTomatoe){ 
   tomatos = tomatos +1;
     setInterval(function(){
       tomatosAddPizzaSlice()
     }, 1000)
   document.getElementById("tomatosCount").innerHTML = tomatos;
-}
+  pizzas -= costOfTomatoe;
+}}
     
 ////////////////////////////////////////////////////////////////////////
     
-function cheeseAddPizzaSlice(){
-  pizzas = pizzas + (cheese * pizzasMultiple);
+function bellPepperAddPizzaSlice(){
+  pizzas = pizzas + (bellPepper * pizzasBellPepperMultiple);
   document.getElementById("sliceOfPizza_count").innerHTML = parseInt(pizzas);
 }
 
-function addCheese(){
-  cheese = cheese +1;
+function addBellPepper(){if (pizzas >= costOfBellPepper){
+  bellPepper = bellPepper +1;
     setInterval(function(){
-      cheeseAddPizzaSlice()
+      bellPepperAddPizzaSlice()
     }, 1000)
-  document.getElementById("cheeseCount").innerHTML = cheese;
-}
+  document.getElementById("bellPepperCount").innerHTML = bellPepper;
+  pizzas -= costOfBellPepper
+}}
       
     
 ////////////////////////////////////////////////////////////////////////
 
 
-function anchoyAddPizzaSlice(){
-  pizzas = pizzas + (anchoy * pizzasMultiple);
+function oliveAddPizzaSlice(){
+  pizzas = pizzas + (olive * pizzasOliveMultiple);
   document.getElementById("sliceOfPizza_count").innerHTML = parseInt(pizzas);
 }
 
-function addAnchoy(){
-  anchoy = anchoy +1;
+function addOlive(){if (pizzas >= costOfOlive){
+  olive = olive +1;
     setInterval(function(){
-  anchoyAddPizzaSlice()
+  oliveAddPizzaSlice()
 
 
       }, 1000)
-  document.getElementById("anchoyCount").innerHTML = anchoy;
-}
+  document.getElementById("oliveCount").innerHTML = olive;
+  pizzas -= costOfOlive;
+}}
 
 ///////////////////////FENETRE MODAL ONCLICK///////////////////////
 
-const openModalPizzaBtn = document.querySelector("#openModalPizzaBtn");
-const modalPizza = document.querySelector("#modalPizza");
-const closeModalPizzaBtn = document.querySelector("#closeModalPizzaBtn");
-const pizza_img = document.querySelector("#pizza_img");
+// const openModalShopBtn = document.querySelector("#openModalShopBtn");
+// const modalShop = document.querySelector("#modalShop");
+// const closeModalShopBtn = document.querySelector("#closeModalShopBtn");
+// const pizza_img = document.querySelector("#pizza_img");
 
 
-openModalPizzaBtn.addEventListener("click" , () => {
-  modalPizza.className = "modal";
+///////////////MODALE PIZZA//////////////
+
+ModalPizzaBtn.addEventListener("click" , () => {
+  modalShop.className = "modalHidden";
+  modalStats.className = "modalHidden";
+  modalMisc.className = "modalHidden";
 })
 
-closeModalPizzaBtn.addEventListener("click" , () => {
-  modalPizza.className = "modalHidden";
+
+///////////////MODALE SHOP//////////////
+openModalShopBtn.addEventListener("click" , () => {
+  modalShop.className = "modal";
 })
+
+closeModalShopBtn.addEventListener("click" , () => {
+  modalShop.className = "modalHidden";
+})
+
+///////////////MODALE STATS//////////////
+openModalStatsBtn.addEventListener("click" , () => {
+  modalStats.className = "modal";
+})
+
+closeModalStatsBtn.addEventListener("click" , () => {
+  modalStats.className = "modalHidden";
+})
+
+///////////////MODALE MISC//////////////
+openModalMiscBtn.addEventListener("click" , () => {
+  modalMisc.className = "modal";
+})
+
+closeModalMiscBtn.addEventListener("click" , () => {
+  modalMisc.className = "modalHidden";
+})
+
