@@ -44,7 +44,6 @@
 	#pizza_container {
 		width: 8rem;
   }
-	
 	header {
 		display: flex;
 		flex-direction: column-reverse;
