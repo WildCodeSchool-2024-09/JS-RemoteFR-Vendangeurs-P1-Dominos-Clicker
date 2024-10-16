@@ -10,17 +10,15 @@ body {
 	flex-direction: column;
 	text-align: center;
 	justify-content: space-between;
-	height: 100vh;
+	height: 96vh;
 }
 
-
-header{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
 }
 
 /*TEXTE DEFILANT*/
@@ -94,11 +92,11 @@ h1 {
 }
 #pizza_img {
 	position: absolute;
-	width: 80%;
+	width: 89%;
 	margin-top: 4em;
 	filter: drop-shadow(5px 5px 1px black);
-	top: -14%;
-	left: 9%;
+	top: -19%;
+	left: 5%;
 }
 
 /*Animations sur la pizza au passage de la souris et au click*/
@@ -153,12 +151,10 @@ width: 100%;
 }
 
 #navMultiplicateurs {
-
-  display: grid;
-  grid-template-columns: 150px 150px;
-  grid-template-rows: 100px 100px;
-  gap: 20px;
-
+	display: grid;
+	grid-template-columns: 150px 150px;
+	grid-template-rows: 100px 100px;
+	gap: 20px;
 }
 
 #navMultiplicateurs img {
@@ -168,16 +164,14 @@ width: 100%;
 /*Stylisation des boutons*/
 
 button {
-
-  border: solid 2px black;
-  box-shadow: 1px 1px black;
-  /*background-color: none;*/
-  border-radius: 10px;
-  padding: 5px;
-  width: 100px;
-  height: 100px;
-  position: relative;
-
+	border: solid 2px black;
+	box-shadow: 1px 1px black;
+	/*background-color: none;*/
+	border-radius: 10px;
+	padding: 5px;
+	width: 100px;
+	height: 100px;
+	position: relative;
 }
 
 button:hover {
@@ -207,16 +201,14 @@ button:hover {
 /*Style de la nav*/
 
 #navMenu {
-
-  background-color: #cb2026;
-  height: 40px;
-  border-radius: 18px;
-  filter: drop-shadow(2px 2px 1px black);
-  border-style: groove;
-  border-radius: 10px 25px;
-  border-color: #efae33;
-  /* margin-bottom: 30px; */
-
+	background-color: #cb2026;
+	height: 40px;
+	border-radius: 18px;
+	filter: drop-shadow(2px 2px 1px black);
+	border-style: groove;
+	border-radius: 10px 25px;
+	border-color: #efae33;
+	/* margin-bottom: 30px; */
 }
 
 #navMenu ul {
@@ -242,50 +234,49 @@ button:hover {
 /*Style Modals de la nav*/
 
 .modal {
-
-  position: fixed;
-  bottom: 80px;
-  left: 0;
-  width: 100%;
-  height: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  transition: opacity 0.3s ease;
-
+	position: fixed;
+	bottom: 80px;
+	left: 0;
+	width: 100%;
+	height: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	transition: opacity 0.3s ease;
 }
 
 .modalHidden {
 	display: none;
 	pointer-events: none;
 }
+#navMultiplicateursDesktop {
+	display: none;
+}
 
 .modalContent {
-
-  width: 90%;
-  height: 80%;
-  background-color: white;
-  padding: 20px;
-  border-radius: 5px;
-  align-items: center;
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: space-between;
+	width: 90%;
+	height: 80%;
+	background-color: white;
+	padding: 20px;
+	border-radius: 5px;
+	align-items: center;
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: space-between;
 }
 
 .closeBtn {
-  border: solid 1px black;
-  border-radius: 50%;
-  border-style: groove;
-  border-color: #efae33;
-  padding: 10px;
-  background-color: #cb2026;
-  filter: drop-shadow(2px 2px 1px black);
-  width: 15%;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: fantasy;
-  color: #ffcf52;
+	border: solid 1px black;
+	border-radius: 50%;
+	border-style: groove;
+	border-color: #efae33;
+	padding: 10px;
+	background-color: #cb2026;
+	filter: drop-shadow(2px 2px 1px black);
+	width: 15%;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: fantasy;
+	color: #ffcf52;
 }
-

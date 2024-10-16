@@ -29,8 +29,15 @@
                
         <div id="pizza_container">
         
-            <img id="plateauPizza_img" src="/public/plateauPizza.png" alt="dessin d'un plateau de pizza vide">
-            <img id="pizza_img" src="/public/pizza.png" alt="photo d'une pizza" onclick="pizzaClick()">
+            <img id="plateauPizza_img" src="public/plateauPizza.png" alt="dessin d'un plateau de pizza vide">
+            <img id="pizza_img" src="public/pizza.png" alt="photo d'une pizza" onclick="pizzaClick()">
+            <nav id="navMultiplicateursDesktop">
+                <li ><button onclick="addShroom()"><img src="public/mushroom.png" alt="dessin d'une tranche de champignon"><span id="shroomCount" >0</span>
+                <p id="shroomCost">10</p></button></li>            
+                <li><button onclick="addTomatos()"><img src="public/tomatoe.png" alt="dessin d'une tranche de tomate"><span id="tomatosCount">0</span><p id="tomatoeCost">20</p></button></li>
+                <li><button onclick="addBellPepper()"><img src="public/bellpepper.png" alt="dessin d'une tranche de poivron"><span id="bellPepperCount">0</span> <p id="bellPepperCost">50</p></button></li>
+                <li><button onclick="addOlive()"><img src="public/olive.png" alt="dessin d'une olive noire"><span id="oliveCount">100</span><p id ="oliveCost">100</pid></p></button></li>      
+            </nav>
         </div>
 
 
@@ -38,8 +45,8 @@
 
             
         
-        </div>
-
+        
+        
         <nav id="navMenu" class="menuHidden">
             <ul>
                 <li id="ModalPizzaBtn" class="menuButton"><a href="#pizza">Pizza</a></li>
@@ -52,22 +59,30 @@
             </ul>
         </nav>
         
-        <footer>
-        </footer>
+      
+        
+        
 
         <div id="modalShop" class="modalHidden">
             <div id="modalShopContent" class="modalContent">
                 <span class="closeBtn" id="closeModalShopBtn">&times;</span>
                 <nav id="navMultiplicateurs">
-                        <li ><button onclick="addShroom()"><img src="/public/mushroom.png" alt="dessin d'une tranche de champignon"><span id="shroomCount" >0</span>
+                        <li ><button onclick="addShroom()"><img src="public/mushroom.png" alt="dessin d'une tranche de champignon"><span id="shroomCount" >0</span>
                         <p id="shroomCost">10</p></button></li>            
-                        <li><button onclick="addTomatos()"><img src="/public/tomatoe.png" alt="dessin d'une tranche de tomate"><span id="tomatosCount">0</span><p id="tomatoeCost">20</p></button></li>
-                        <li><button onclick="addBellPepper()"><img src="/public/bellpepper.png" alt="dessin d'une tranche de poivron"><span id="bellPepperCount">0</span> <p id="bellPepperCost">50</p></button></li>
-                        <li><button onclick="addOlive()"><img src="/public/olive.png" alt="dessin d'une olive noire"><span id="oliveCount">100</span><p id ="oliveCost">100</pid></p></button></li>      
+                        <li><button onclick="addTomatos()"><img src="public/tomatoe.png" alt="dessin d'une tranche de tomate"><span id="tomatosCount">0</span><p id="tomatoeCost">20</p></button></li>
+                        <li><button onclick="addBellPepper()"><img src="public/bellpepper.png" alt="dessin d'une tranche de poivron"><span id="bellPepperCount">0</span> <p id="bellPepperCost">50</p></button></li>
+                        <li><button onclick="addOlive()"><img src="public/olive.png" alt="dessin d'une olive noire"><span id="oliveCount">100</span><p id ="oliveCost">100</pid></p></button></li>      
                 </nav>
+                
             </div>
         </div>
         
+
+        
+
+            <!-- </div>
+        </div> -->
+
         <div id="modalStats" class="modalHidden">
             <div id="modalStatsContent" class="modalContent">
                 <span class="closeBtn" id="closeModalStatsBtn">&times;</span>

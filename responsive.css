@@ -7,17 +7,30 @@
 		background-image: url(./public/background.png);
 	}
 	#pizza_container {
-		width: 8rem;
+		width: 28vw;
+		text-align: center;
+	}
+	h1 {
+		font-size: 6.1em;
 	}
 	#pizza_img {
 		width: 100%;
+		position: relative;
+		position: absolute;
+		margin-top: 0;
+		filter: drop-shadow(5px 5px 1px black);
+		top: 0;
+		left: 0;
 	}
+	#plateauPizza_img {
+		width: 100%;
+	}
+
 	header {
 		display: flex;
 		flex-direction: column-reverse;
 		width: 100%;
 		justify-content: center;
-		height: 30rem;
 	}
 	#scrollingText {
 		font-size: 3rem;
@@ -30,9 +43,7 @@
 		width: 100%;
 	}
 	#navMultiplicateurs {
-		display: flex;
-		flex-direction: column;
-		margin-left: 35rem;
+		display: none;
 	}
 	#scrollingText_container {
 		width: 80%;
@@ -51,11 +62,25 @@
 	}
 
 	#navMenu {
-		height: 5rem;
+		height: 8rem;
 		width: 85%;
 	}
 
 	#navMenu ul a {
 		font-size: 3rem;
+	}
+	#navMultiplicateursDesktop {
+		display: flex;
+		flex-direction: column;
+
+		gap: 2rem;
+		list-style: none;
+		position: absolute;
+		bottom: -12rem;
+		right: -22rem;
+	}
+	#navMultiplicateursDesktop button {
+		width: 10rem;
+		height: 10rem;
 	}
 }
