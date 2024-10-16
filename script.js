@@ -135,16 +135,45 @@ function addOlive(){if (pizzas >= costOfOlive){
 
 ///////////////////////FENETRE MODAL ONCLICK///////////////////////
 
-const openModalPizzaBtn = document.querySelector("#openModalPizzaBtn");
-const modalPizza = document.querySelector("#modalPizza");
-const closeModalPizzaBtn = document.querySelector("#closeModalPizzaBtn");
-const pizza_img = document.querySelector("#pizza_img");
+// const openModalShopBtn = document.querySelector("#openModalShopBtn");
+// const modalShop = document.querySelector("#modalShop");
+// const closeModalShopBtn = document.querySelector("#closeModalShopBtn");
+// const pizza_img = document.querySelector("#pizza_img");
 
 
-openModalPizzaBtn.addEventListener("click" , () => {
-  modalPizza.className = "modal";
+///////////////MODALE PIZZA//////////////
+
+ModalPizzaBtn.addEventListener("click" , () => {
+  modalShop.className = "modalHidden";
+  modalStats.className = "modalHidden";
+  modalMisc.className = "modalHidden";
 })
 
-closeModalPizzaBtn.addEventListener("click" , () => {
-  modalPizza.className = "modalHidden";
+
+///////////////MODALE SHOP//////////////
+openModalShopBtn.addEventListener("click" , () => {
+  modalShop.className = "modal";
 })
+
+closeModalShopBtn.addEventListener("click" , () => {
+  modalShop.className = "modalHidden";
+})
+
+///////////////MODALE STATS//////////////
+openModalStatsBtn.addEventListener("click" , () => {
+  modalStats.className = "modal";
+})
+
+closeModalStatsBtn.addEventListener("click" , () => {
+  modalStats.className = "modalHidden";
+})
+
+///////////////MODALE MISC//////////////
+openModalMiscBtn.addEventListener("click" , () => {
+  modalMisc.className = "modal";
+})
+
+closeModalMiscBtn.addEventListener("click" , () => {
+  modalMisc.className = "modalHidden";
+})
+
