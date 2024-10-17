@@ -78,6 +78,7 @@ function addShroom() {if (pizzas >= costOfShroom){
       ShroomAddPizzaSlice()
 }, 1000)
   document.getElementById("shroomCount").innerHTML = shrooms;
+  document.getElementById("shroomCount1").innerHTML = shrooms;
   pizzas -= costOfShroom;
 }}
 
@@ -94,6 +95,7 @@ function addTomatos(){if( pizzas >= costOfTomatoe){
       tomatosAddPizzaSlice()
     }, 1000)
   document.getElementById("tomatosCount").innerHTML = tomatos;
+  document.getElementById("tomatosCount1").innerHTML = tomatos;
   pizzas -= costOfTomatoe;
 }}
     
@@ -109,7 +111,10 @@ function addBellPepper(){if (pizzas >= costOfBellPepper){
     setInterval(function(){
       bellPepperAddPizzaSlice()
     }, 1000)
-  document.getElementById("bellPepperCount").innerHTML = bellPepper;
+    document.getElementById("bellPepperCount").innerHTML = bellPepper;
+    document.getElementById("bellPepperCount1").innerHTML = bellPepper;
+    
+  
   pizzas -= costOfBellPepper
 }}
       
@@ -129,8 +134,9 @@ function addOlive(){if (pizzas >= costOfOlive){
 
 
       }, 1000)
-  document.getElementById("oliveCount").innerHTML = olive;
-  pizzas -= costOfOlive;
+      document.getElementById("oliveCount").innerHTML = olive;
+      document.getElementById("oliveCount1").innerHTML = olive;
+      pizzas -= costOfOlive;
 }}
 
 ///////////////////////FENETRE MODAL ONCLICK///////////////////////

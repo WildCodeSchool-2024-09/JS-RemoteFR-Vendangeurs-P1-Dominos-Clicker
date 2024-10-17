@@ -8,8 +8,10 @@
 			background-image: url(./public/background.png);
 	}
 	#pizza_container {
-			width: 28vw;
+			width: 26vw;
 			text-align: center;
+			margin-top: 2em;
+			
 	}
 	h1 {
 			font-size: 6.1em;
@@ -34,7 +36,7 @@
 			justify-content: center;
 	}
 	#scrollingText {
-			font-size: 3rem;
+			font-size: 1rem;
 			font-weight: bold;
 	}
 
@@ -49,6 +51,7 @@
 	#scrollingText_container {
 			width: 80%;
 			margin: 0;
+			
 	}
 	main {
 			display: flex;
@@ -77,11 +80,14 @@
 			gap: 2rem;
 			list-style: none;
 			position: absolute;
-			bottom: -12rem;
+			bottom: -15rem;
 			right: -22rem;
 	}
 	#navMultiplicateursDesktop button {
 			width: 10rem;
 			height: 10rem;
 	}
-}
+	
+
+
+	}
