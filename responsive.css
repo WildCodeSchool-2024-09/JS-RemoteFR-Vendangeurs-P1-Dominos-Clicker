@@ -6,6 +6,8 @@
 			flex-direction: column-reverse;
 			align-items: center;
 			background-image: url(./public/background.png);
+
+			margin-top: 15px;
 	}
 	#pizza_container {
 			width: 26vw;
@@ -62,12 +64,13 @@
 	#sliceOfPizza_count {
 			height: 8rem;
 			width: 28rem;
-			font-size: 6rem;
+			font-size: 60px;
 	}
 
 	#navMenu {
 			height: 8rem;
 			width: 85%;
+			
 	}
 
 	#navMenu ul a {
@@ -87,7 +90,63 @@
 			width: 10rem;
 			height: 10rem;
 	}
+	#shroomCost {font-size: 25px;
+		 font-weight: bold;
+		  font-family: sans-serif; 
+		}
+
+	#tomatoeCost {font-size: 25px;
+		 font-weight: bold; 
+		 font-family: sans-serif; 
+		}
+
+	#bellPepperCost {font-size: 25px;
+		 font-weight: bold;
+		  font-family: sans-serif; 
+		}
+
+	#oliveCost {font-size: 25px;
+		 font-weight: bold;
+		  font-family: sans-serif; 
+		}
+
+		#navMultiplicateursDesktop img {
+			height: 80px;
+		}
+			
+#navMultiplicateursDesktop span {
+	position: absolute;
+	border: solid 2px black;
+	bottom: -1rem;
+	right: -.5rem;
+	width: 50px;
+	height: 50px;
+	background-color: whitesmoke;
+	border-radius: 50%;
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
 	
+}
+
+.closeBtn {
+	border: solid 1px black;
+	border-radius: 50%;
+	border-style: groove;
+	border-color: #efae33;
+	padding: 10px;
+	background-color: #cb2026;
+	filter: drop-shadow(2px 2px 1px black);
+	width: 3%;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: fantasy;
+	color: #ffcf52;
+}
 
 
-	}
+}
